@@ -1,0 +1,31 @@
+/* colors 
+------------
+blue: #15212E
+pink: #F84C5F
+dark-gray: #999999
+light-gray: #EEEEEE */
+
+/* Global
+-------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color:#15212E ;
+  color: white;
+}
+
+.logo {
+  width: 220px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ 
+}
+
+
+.menu-btn {
+
+}
