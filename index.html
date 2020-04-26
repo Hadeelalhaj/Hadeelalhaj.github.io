@@ -7,28 +7,56 @@
   <title>Hadeel Haj Mohammad Cv & portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <div class="content-wrapper">
+    <!-- Cursor -->
+    <div class="custom-cursor"></div>
+    <!-- Menu icon -->
+    <nav class="nav-container" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </nav>
+    <!-- <div class="menu-wrapper">
+      <div class="menu-burger"></div>
+    </div> -->
 
-  <div class="menu-wrapper">
-    <div class="menu-burger"></div>
-  </div>
-  
-  <img class="logo" src="assets/logo.svg" alt="logo">
-  <h3>web.graphic designer</h3>
-  
-  <ul>
-    <li><img src="#" alt="pintrest"></li>
-    <li><img src="#" alt="behance"></li>
-    <li><img src="#" alt="instagram"></li>
-  </ul>
+    <!-- logo -->
+    <div class="logo-container">
+      <img class="logo" src="assets/logo.svg" alt="logo">
+      <h3 class="logo-title">web.<span>graphic designer</span></h3>
+    </div>
+    <!-- Social networks -->
+    <ul class="social-container">
+      <li><img src="assets/pinterest.svg" alt="pintrest" width="32"></li>
+      <li><img src="assets/behance-network.svg" alt="behance" width="32"></li>
+      <li><img src="assets/instagram.svg" alt="instagram" width="32"></li>
+    </ul>
 
-  <div>
-    <h1>ABOUT ME</h1>
-    <p>Hello, I am Hadeel !</p>
-    <p>As a web-graphic designer, I am very passionate & dedicated to my work, with
-    4 years of experience, I acquired the skills & knowledge necessary to make a project succeed. I enjoy every step of the journey, from brainstorming to project execution. The most exciting part to me is when I start implementing the ideas.</p>
-    <a href="#">CONTACT ME</a>
+    <!-- About me -->
+    <!-- <article>
+      <h1>ABOUT ME</h1>
+      <p>Hello, I am Hadeel !</p>
+      <p>As a web-graphic designer, I am very passionate & dedicated to my work, with
+      4 years of experience, I acquired the skills & knowledge necessary to make a project succeed. I enjoy every step of the journey, from brainstorming to project execution. The most exciting part to me is when I start implementing the ideas.</p>
+      <a href="#">CONTACT ME</a>
+    </article> -->
   </div>
+  <script>
+    const cursor = document.querySelector('.custom-cursor');
+
+    document.addEventListener('mousemove', e => {
+      cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+    })
+    
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+    // document.addEventListener('click', () => {
+    //   cursor.classList.add("currsor-expand");
+    // })
+  </script>
 
 </body>
 </html>

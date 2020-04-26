@@ -13,19 +13,124 @@ light-gray: #EEEEEE */
 
 body {
   margin: 0;
+  height: 100vh;
+  cursor: none;
+  
+  font-family: Arial, Helvetica, sans-serif;
   background-color:#15212E ;
   color: white;
+  
+}
+/* cursor
+-------------- */
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+
+  background-color:  #F84C5F;
+ 
+}
+/* @keyframes cursorAnim1 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
 }
 
-.logo {
-  width: 220px;
+.currsor-expand {
+  animation: curorAnim1 .5s forwards;
+  border: 1px solid #F84C5F;
+} */
+.content-wrapper {
+  padding: 40px;
+  height: 100vh;
+}
+
+/* Nav bar
+-------------- */
+.nav-container {
+  margin: 0;
+  padding: 40px;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+.bar1, .bar2, .bar3 {
+  width: 40px;
+  height: 4px;
+  background-color: white;
+  border-radius: 10%;
+  margin: 20% 0;
+  transition: 0.4s;
+}
+
+.nav-container :first-child{
+  margin-top: 0;
+}
+.nav-container :nth-child(2){
+  width: 30px;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Logo
+-------------- */
+.logo-container {
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
- 
 }
 
-
-.menu-btn {
+.logo {
+  width: 20vh;
 
 }
+
+.logo-title {
+  margin: 2% 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+span {
+  color: #F84C5F;
+
+}
+
+/* Social networks
+-------------- */
+.social-container {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 244px;
+  position: fixed;
+  top: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
