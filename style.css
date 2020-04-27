@@ -17,9 +17,11 @@ body {
   cursor: none;
   
   font-family: Arial, Helvetica, sans-serif;
-  background-color:#15212E ;
+  background-color:white ;
   color: white;
-  
+}
+body.background-blue {
+  background-color: #15212E;
 }
 /* cursor
 -------------- */
@@ -28,7 +30,7 @@ body {
   height: 20px;
   border-radius: 50%;
   position: absolute;
-
+  z-index: 1;
   background-color:  #F84C5F;
  
 }
@@ -46,39 +48,41 @@ body {
 
 .currsor-expand {
   animation: curorAnim1 .5s forwards;
-  border: 1px solid #F84C5F;
+  border: 2px solid #F84C5F;
 } */
 .content-wrapper {
   padding: 40px;
   height: 100vh;
+  position: relative;
+
 }
 
 /* Nav bar
 -------------- */
-.nav-container {
+.nav-icon-container {
   margin: 0;
   padding: 40px;
   display: inline-block;
   cursor: pointer;
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 0;
 }
-
 
 .bar1, .bar2, .bar3 {
   width: 40px;
   height: 4px;
   background-color: white;
   border-radius: 10%;
-  margin: 20% 0;
+  margin: 7px 0;
   transition: 0.4s;
 }
 
-.nav-container :first-child{
+
+.nav-icon-container :first-child{
   margin-top: 0;
 }
-.nav-container :nth-child(2){
+.nav-icon-container :nth-child(2){
   width: 30px;
 }
 
@@ -87,11 +91,37 @@ body {
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+  opacity: 0;
+}
 
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.nav-list-wrapper {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+
+
+}
+.nav-list-container li {
+  padding: 1.5em;
+  list-style: none;
+}
+
+.nav-list-container a {
+  margin: 0;
+  padding: 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #999999;
 }
 
 /* Logo
@@ -104,7 +134,12 @@ body {
 }
 
 .logo {
-  width: 20vh;
+  width: 25vh;
+
+}
+
+img.logo-small {
+  width: 90px
 
 }
 
@@ -114,9 +149,24 @@ body {
   text-transform: uppercase;
 }
 
-span {
+.logo-title-color {
   color: #F84C5F;
 
+}
+
+.side-decoration{
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 43rem;
+
+  color: #EEEEEE;
+  /* =============== i don't know why it's not aligned to the edge of the viewport =================*/
+  transform: rotate(90deg);
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 /* Social networks
@@ -131,6 +181,6 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
+
 

@@ -4,20 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header> 
-    <img src="#" alt="logo">
-    <a href="#">X</a>
-  </header>
-  <p>web</p>
-  <ul>
-    <li><a href="#">01 HOME</a>01 HOME</li>
-    <li><a href="#">02 MY RESUME</a>02 MY RESUME</li>
-    <li><a href="#">03 PROJECTS</a>03 PROJECTS</li>
-    <li><a href="#">04 CONTACT</a>04 CONTACT</li>
-  </ul>
-  
+  <div class="content-wrapper">
+    <!-- Cursor -->
+    <div class="custom-cursor"></div>
+    <header> 
+      <img class="logo logo-small" src="assets/logo-dark.svg" alt="logo">
+     
+    </header>
+    <p class="side-decoration">web</p>
+    <nav class="nav-list-wrapper">
+      <ul class="nav-list-container">
+        <li><a href="#"><span> 01  </span> HOME</a></li>
+        <li><a href="#"><span> 02  </span> RESUME</a></li>
+        <li><a href="#"><span> 03  </span> PROJECTS</a></li>
+        <li><a href="#"><span> 04  </span> CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <script>
+    const cursor = document.querySelector('.custom-cursor');
+
+    document.addEventListener('mousemove', e => {
+      cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+    })
+    
+  </script>
 </body>
 </html>
