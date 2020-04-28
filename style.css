@@ -3,7 +3,8 @@
 blue: #15212E
 pink: #F84C5F
 dark-gray: #999999
-light-gray: #EEEEEE */
+mid-gray: #EEEEEE 
+light-gray:  #F3F3F3*/
 
 /* Global
 -------------- */
@@ -18,11 +19,15 @@ body {
   
   font-family: Arial, Helvetica, sans-serif;
   background-color:white ;
-  color: white;
+  color:  #15212E;
 }
-body.background-blue {
+body.home-page {
   background-color: #15212E;
 }
+.the-fork-page {
+  background-color: #EEEEEE;
+}
+
 /* cursor
 -------------- */
 .custom-cursor {
@@ -49,7 +54,8 @@ body.background-blue {
 .currsor-expand {
   animation: curorAnim1 .5s forwards;
   border: 2px solid #F84C5F;
-} */
+} */  
+
 .content-wrapper {
   padding: 40px;
   height: 100vh;
@@ -61,29 +67,35 @@ body.background-blue {
 -------------- */
 .nav-icon-container {
   margin: 0;
-  padding: 40px;
+  padding: 50px 40px 40px 40px;
   display: inline-block;
   cursor: pointer;
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 0;
 }
 
 .bar1, .bar2, .bar3 {
-  width: 40px;
-  height: 4px;
+  width: 30px;
+  height: 3px;
   background-color: white;
   border-radius: 10%;
-  margin: 7px 0;
+  margin: 6px 0;
   transition: 0.4s;
 }
 
+div.dark-bar {
+  background-color: #15212E;
+}
 
 .nav-icon-container :first-child{
   margin-top: 0;
 }
 .nav-icon-container :nth-child(2){
-  width: 30px;
+  width: 22px;
+}
+.nav-icon-container :nth-child(3){
+  margin-bottom: 0;
 }
 
 .change .bar1 {
@@ -106,8 +118,6 @@ body.background-blue {
   position: absolute;
   top: 30%;
   left: 50%;
-
-
 }
 .nav-list-container li {
   padding: 1.5em;
@@ -123,30 +133,46 @@ body.background-blue {
   font-weight: 400;
   color: #999999;
 }
+.nav-list-item::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color:  #F84C5F;
+
+  position: absolute;
+  bottom: 49%;
+  right: -10%;
+  transition: width .3s;
+
+}
+.nav-list-item:hover::after {
+  width: 120%;
+  transition: width .3s;
+}
 
 /* Logo
 -------------- */
 .logo-container {
   text-align: center;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: calc(50% - 110px);
+  left: calc(50% - 122px);
 }
 
 .logo {
   width: 25vh;
-
 }
 
 img.logo-small {
-  width: 90px
-
+  width: 75px
 }
 
 .logo-title {
   margin: 2% 0 0 0;
   text-align: center;
   text-transform: uppercase;
+  color: white;
 }
 
 .logo-title-color {
@@ -163,10 +189,17 @@ img.logo-small {
 
   color: #EEEEEE;
   /* =============== i don't know why it's not aligned to the edge of the viewport =================*/
-  transform: rotate(90deg);
+  transform: rotate(90deg) translateX(360px);
   position: absolute;
   left: 0;
   top: 0;
+}
+/* i don't know why i feel that the APP doesn't match 
+the size of the MENU in the menu page, while they have the same class name   */
+.the-fork-page .side-decoration {
+  color: #F3F3F3;
+  z-index: -1;
+
 }
 
 /* Social networks
@@ -182,5 +215,52 @@ img.logo-small {
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* Page content
+-------------- */
+.project-page-title {
+  margin: 0 0 0 200px;
+  padding: 70px 0;
+  font-size: 3em;
+
+  display: inline-block;
+  position: relative;
+
+}
+
+.project-page-title::after {
+  content: '';
+  display: block;
+  width: 120%;
+  height: 4px;
+  background-color:  #F84C5F;
+
+  position: absolute;
+  bottom: 49%;
+  right: -10%;
+  transition: width .3s;
+
+}
+h1 {
+  margin: 0;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.second-title {
+  margin: 0;
+  font-size: 5.9em;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 0;
+  color: white;
+
+  
+
+
+
+}
+
+
+
 
 
