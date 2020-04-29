@@ -218,9 +218,21 @@ the size of the MENU in the menu page, while they have the same class name   */
 
 /* Page content
 -------------- */
+/* Projects page 
+============== */
+
+.crousol-container{
+  margin-left: 200px;
+  position: relative;
+  display: flex;
+}
+.crousol-container article {
+  margin-right: 32px;
+}
+
 .project-page-title {
   margin: 0 0 0 200px;
-  padding: 70px 0;
+  padding: 3.5rem 0;
   font-size: 3em;
 
   display: inline-block;
@@ -231,21 +243,48 @@ the size of the MENU in the menu page, while they have the same class name   */
 .project-page-title::after {
   content: '';
   display: block;
-  width: 120%;
+  width: 110%;
   height: 4px;
   background-color:  #F84C5F;
 
   position: absolute;
   bottom: 49%;
-  right: -10%;
+  right: -5%;
   transition: width .3s;
 
 }
+
 h1 {
   margin: 0;
   font-size: 3em;
   text-transform: uppercase;
 }
+h2 {
+  margin: 0;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.project-container p {
+
+  font-size: 1.5em;
+  font-weight: 100;
+  text-transform: capitalize;
+  
+  color: #999999;
+}
+.project-container img {
+  margin-bottom: 3.5rem;
+  width: 860px;
+}
+.project-type-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* the fork 
+============== */
 .second-title {
   margin: 0;
   font-size: 5.9em;
@@ -253,12 +292,9 @@ h1 {
   font-weight: 900;
   line-height: 0;
   color: white;
-
   
-
-
-
 }
+
 
 
 
