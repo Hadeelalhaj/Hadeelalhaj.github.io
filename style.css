@@ -15,6 +15,7 @@ light-gray:  #F3F3F3*/
 body {
   margin: 0;
   height: 100vh;
+  
   cursor: none;
   
   font-family: Arial, Helvetica, sans-serif;
@@ -22,7 +23,9 @@ body {
   color:  #15212E;
 }
 body.home-page {
+  overflow: hidden;
   background-color: #15212E;
+  
 }
 .the-fork-page {
   background-color: #EEEEEE;
@@ -65,7 +68,8 @@ body.home-page {
 
 /* Nav bar
 -------------- */
-.nav-icon-container {
+
+/* .nav-icon-container {
   margin: 0;
   padding: 50px 40px 40px 40px;
   display: inline-block;
@@ -149,7 +153,7 @@ div.dark-bar {
 .nav-list-item:hover::after {
   width: 120%;
   transition: width .3s;
-}
+} */
 
 /* Logo
 -------------- */
@@ -161,7 +165,7 @@ div.dark-bar {
 }
 
 .logo {
-  width: 25vh;
+  width: 22vh;
 }
 
 img.logo-small {
@@ -208,7 +212,7 @@ the size of the MENU in the menu page, while they have the same class name   */
   margin: 0;
   padding: 0;
   list-style: none;
-  height: 244px;
+  height: 200px;
   position: fixed;
   top: 35%;
   display: flex;
@@ -262,7 +266,10 @@ h1 {
 h2 {
   margin: 0;
   font-size: 1.5em;
-  text-transform: uppercase;
+  font-weight: 100;
+  text-transform: initial;
+
+  color:#999999;
 }
 
 .project-container p {
@@ -285,15 +292,55 @@ h2 {
 
 /* the fork 
 ============== */
+.stripe {
+  background-color: #F84C5F;
+  width: 100%;
+  height: 1%;
+
+}
+
+.project-info {
+  max-width: 400px;
+  position: absolute;
+  top: 285px;
+  left: 970px;
+
+}
+
 .second-title {
   margin: 0;
+  width: 100vh;
   font-size: 5.9em;
-  text-transform: uppercase;
   font-weight: 900;
-  line-height: 0;
+  text-transform: uppercase;
+  line-height: 5%;
+
   color: white;
   
+  position: absolute;
+  z-index: -1;
 }
+
+.project-brief {
+  font-size: 1.5rem;
+  
+}
+.project-brief::after {
+  content: '';
+  display: block;
+  width: 20%;
+  height: 3px;
+  background-color:  #F84C5F;
+
+  position: absolute;
+  bottom: 60%;
+  right: 80%;
+}
+.project-detail-info p {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
 
 
 

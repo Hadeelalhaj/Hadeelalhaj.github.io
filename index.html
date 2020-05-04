@@ -14,16 +14,17 @@
     <div class="custom-cursor"></div>
     <!-- Menu icon -->
     <header>
-      <div class="nav-icon-container" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">01  HOME</a>
+        <a href="#">02  MY RESUME</a>
+        <a href="#">03  MY PROJECTS</a>
+        <a href="#">04  CONTACT ME</a>
       </div>
+      
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
    </header>
-    <!-- <div class="menu-wrapper">
-      <div class="menu-burger"></div>
-    </div> -->
-
+   
     <!-- logo -->
     <div class="logo-container">
       <img class="logo" src="assets/logo.svg" alt="logo">
@@ -31,9 +32,9 @@
     </div>
     <!-- Social networks -->
     <ul class="social-container">
-      <li><img src="assets/pinterest.svg" alt="pintrest" width="32"></li>
-      <li><img src="assets/behance-network.svg" alt="behance" width="32"></li>
-      <li><img src="assets/instagram.svg" alt="instagram" width="32"></li>
+      <li><img src="assets/pinterest.svg" alt="pintrest" width="25"></li>
+      <li><img src="assets/behance-network.svg" alt="behance" width="25"></li>
+      <li><img src="assets/instagram.svg" alt="instagram" width="25"></li>
     </ul>
 
     <!-- About me -->
@@ -46,18 +47,22 @@
     </article> -->
   </div>
   <script>
+    // cursor
     const cursor = document.querySelector('.custom-cursor');
 
     document.addEventListener('mousemove', e => {
       cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
     })
-    
-    function myFunction(x) {
-    x.classList.toggle("change");
-    } 
-    // document.addEventListener('click', () => {
-    //   cursor.classList.add("cursor-expand");
-    // })
+
+    // menubar
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+   
   </script>
 
 </body>
