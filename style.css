@@ -204,7 +204,7 @@ img.logo-small {
   left: 0;
   top: 0;
 }
-/* i don't know why i feel that the APP doesn't match 
+/* i don't know why i feel that the word APP doesn't match 
 the size of the MENU in the menu page, while they have the same class name   */
 .the-fork-page .side-decoration {
   color: #F3F3F3;
@@ -278,6 +278,11 @@ h2 {
   color:#999999;
 }
 
+.project-container h2 {
+  text-transform: uppercase;
+  color: #15212E;
+}
+
 .project-container p {
 
   font-size: 1.5em;
@@ -288,12 +293,9 @@ h2 {
 }
 .project-container img {
   margin-bottom: 3.5rem;
-  width: 860px;
+  width: 750px;
 }
-.project-type-container {
-  display: flex;
-  justify-content: space-between;
-}
+
 
 
 /* the fork 
