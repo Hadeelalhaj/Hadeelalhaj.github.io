@@ -7,93 +7,107 @@
     <meta name="description" content="web.graphic designer portfolio">
     <meta name="keywords" content="portfolio, designer, web and graphic, projects">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>portfolio</title>
-   
-
+    <title>resume</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      </style>
 </head>
-<body>
-  <div>
 
-    <header>
-  
-
+<body class="resume">
+  <div class="content-wrapper">
+    <!-- Cursor -->
+    <div class="custom-cursor"></div>
+    <header> 
+      <img class="logo logo-small" src="assets/logo-dark.svg" alt="logo">
+      <div class="nav-icon-container "onclick="myFunction(this)">
+        <div class="bar1 dark-bar"></div>
+        <div class="bar2 dark-bar"></div>
+        <div class="bar3 dark-bar"></div>
+      </div>
+      
     </header>
 
-      <main>
-        <h1>My Resume</h1>
-        <section>
-         <p>Hello! my name is Hadeel, I am a web & graphic designer.</p>
-        </section>
-        <!-- education -->
-       <section>
-          <h3>education</h3>
+    <main>
+      <h1 class="page-title">My Resume</h1>
+      <!-- education -->
+      <section class="resume-info-wrapper">
+        <h3>MY Education</h3>
 
-          <article>
-            <p> 2019 - 2020 </p>
-            <h4>MAsters degree in web and digital design</h4>
-            <p>SPD Scuola Politecnica di Design "UILM" </p>
-          </article>
+        <article>
+          <p> 2019 - 2020 </p>
+          <h4>MAsters degree in web and digital design</h4>
+          <p>SPD Scuola Politecnica di Design "UILM" </p>
+        </article>
 
-          <article>
-            <p> 2007 - 2011 </p>
-            <h4>Bachelor in Interior design</h4>
-            <p>Al-Ahliya University of Amman, Jordan</p>
-          </article>
-        </section>
+        <article>
+          <p> 2007 - 2011 </p>
+          <h4>Bachelor in Interior design</h4>
+          <p>Al-Ahliya University of Amman, Jordan</p>
+        </article>
+      </section>
 
-          <!-- work experience -->
-        <section>
+        <!-- work experience -->
+      <section class="resume-info-wrapper">
 
-          <h3>work experience</h3>
-          <article>
+        <h3>My Experience</h3>
+        <article>
 
-            <p>2017 - 2019</p>
-            <h4>Graphic Designer </h4>
-            <p>ADZVISOR - Digital Marketing Agency</p>
-            <p> Working on social media advertisements - Rich media
-            advertisements using celtra platform.
-            Digital advertisments “ Google banners</p>
-          </article>
-              
-          <article>
-            <p>2012 - 2015</p>
-            <h4>Interior Designer </h4>
-            <p>Node -Project & Construction Management</p>
-            <p> Working on interior projects using Autocad and 3ds Max.
-            Exhibition booth design from scratch with detail drawing.
-            Most of the designs “ Apartment furniture - Office design”</p>
-          </article>
-        </section>
-
-          <!-- Skills -->
-        <section>
+          <p>2017 - 2019</p>
+          <h4>Graphic Designer </h4>
+          <p>ADZVISOR - Digital Marketing Agency</p>
+          <p> Working on social media advertisements - Rich media
+          advertisements using celtra platform.
+          Digital advertisments “ Google banners</p>
+        </article>
             
-          <h3>my skills</h3>
+        <article>
+          <p>2012 - 2015</p>
+          <h4>Interior Designer </h4>
+          <p>Node -Project & Construction Management</p>
+          <p> Working on interior projects using Autocad and 3ds Max.
+          Exhibition booth design from scratch with detail drawing.
+          Most of the designs “ Apartment furniture - Office design”</p>
+        </article>
+      </section>
 
-          <article>
-            <p>UI/UX</p> 
-            <p>Branding</p>
-            <p>Web & app</p>
-          </article>
+        <!-- Skills -->
+      <section class="resume-info-wrapper"> 
+          
+        <h3>My Skills</h3>
 
-          <article>
-            <p>Ps</p> 
-            <p>Ai</p>
-            <p>Xd</p>
-            <p>Sketch</p>
-            <p>Ae</p>
-            <p>Id</p>
-          </article>
+        <article>
+          <p>UI/UX</p> 
+          <p>Branding</p>
+          <p>Web & app</p>
+        </article>
 
-          <article>
-            <p>Html</p> 
-            <p>Css</p>
-            <p>Js</p>
-          </article>
-        </section>
+        <article>
+          <p>Ps</p> 
+          <p>Ai</p>
+          <p>Xd</p>
+          <p>Sketch</p>
+          <p>Ae</p>
+          <p>Id</p>
+        </article>
 
-      </main>
+        <article>
+          <p>Html</p> 
+          <p>Css</p>
+          <p>Js</p>
+        </article>
+      </section>
+
+    </main>
   </div>
- 
+
+  <script>
+    const cursor = document.querySelector('.custom-cursor');
+
+    document.addEventListener('mousemove', e => {
+      cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+    })
+    
+  </script>
 </body>
 </html>

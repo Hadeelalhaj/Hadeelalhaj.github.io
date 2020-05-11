@@ -23,6 +23,8 @@ body {
   cursor: none;
   
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
   line-height: 1.5em;
   background-color:white ;
   color: #15212E;
@@ -65,12 +67,53 @@ body.projects-page {
 .currsor-expand {
   animation: curorAnim1 .5s forwards;
   border: 2px solid #F84C5F;
-} */  
+} */ 
+header {
+  margin-bottom: 5em;
+} 
 
 .content-wrapper {
   padding: 40px;
   height: 100vh;
   position: relative;
+
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.953em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h2 {
+  margin: 0;
+
+  font-size: 1.25em;
+  font-weight: 300;
+  line-height: 0;
+  text-transform: initial;
+
+  color:#999999;
+}
+
+.page-title {
+  margin: 0 0 4rem 6.5rem;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+}
+
+.page-title::after {
+  content: '';
+  display: block;
+  width: 110%;
+  height: 4px;
+  background-color:  #F84C5F;
+
+  position: absolute;
+  bottom: 49%;
+  right: -5%;
+  transition: width .3s;
 
 }
 
@@ -244,43 +287,6 @@ the size of the MENU in the menu page, while they have the same class name   */
   margin-right: 32px;
 }
 
-.project-page-title {
-  margin: 0 0 0 200px;
-  padding: 3.5rem 0;
-  display: inline-block;
-  position: relative;
-
-}
-
-.project-page-title::after {
-  content: '';
-  display: block;
-  width: 110%;
-  height: 4px;
-  background-color:  #F84C5F;
-
-  position: absolute;
-  bottom: 49%;
-  right: -5%;
-  transition: width .3s;
-
-}
-
-h1 {
-  margin: 0;
-  font-size: 3em;
-  text-transform: uppercase;
-}
-h2 {
-  margin: 0;
-
-  font-size: 1.2em;
-  font-weight: 500;
-  line-height: 0;
-  text-transform: initial;
-
-  color:#999999;
-}
 
 .project-container h2 {
   text-transform: uppercase;
@@ -301,8 +307,7 @@ h2 {
 }
 
 
-
-/* the fork 
+/* The fork 
 ============== */
 .stripe {
   background-color: #F84C5F;
@@ -314,18 +319,19 @@ h2 {
 .project-info {
   max-width: 500px;
   position: relative;
-  top: 20%;
+  top: -2%;
   left: 50%;
 
 }
 .project-info h1 {
+  font-size: 3em;
   font-weight: 500;
-
+  
 }
 
 .second-title {
   margin: 0;
-  font-size: 3.815rem;
+  font-size: 3.8em;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 5%;
@@ -333,7 +339,7 @@ h2 {
   color: rgba(255, 255, 255, 0.39);
   
   position: fixed;
-  top: 37%;
+  top: 27%;
   z-index: -1;
 }
 
@@ -342,9 +348,8 @@ h2 {
   font-size: 1.25rem;
   line-height: 1.5em;
   font-weight: 500;
-  
 }
-.project-brief::after {
+.project-info .project-brief::after {
   content: '';
   display: block;
   width: 20%;
@@ -356,7 +361,7 @@ h2 {
   right: 80%;
 }
 .the-fork-page h2 {
-  font-weight: 300;
+  font-weight: 100;
 
 }
 .project-detail-info p {
@@ -384,7 +389,7 @@ h2 {
  
 }
 .project-participants p {
-  margin: 0 0 .7em 0;
+  margin: 0 0 .5em 0;
 
   font-weight: 300;
   line-height: 1em;
@@ -397,6 +402,50 @@ h2 {
   padding: 1em;
   width: 90%;
 }
+/* Ressume
+============== */
+.resume-info-wrapper {
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: 2;
+  position: relative;
+  left: 50%;
+}
+
+/* Contact me 
+============== */
+.contact-info-wrapper {
+  max-width: 500px;
+  position: relative;
+  left: 50%;
+}
+.contact-title {
+  margin: 0 0 4.5rem 0;
+  font-size: 1.25rem;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+.contact-info {
+  margin-top: 3.5em;
+}
+.contact-category{
+  margin-bottom: 1.875rem;
+}
+.contact-info p {
+  margin: 0;
+}
+span {
+  color: #F84C5F;
+}
+.contact-info-wrapper img {
+  margin: 1.875rem 1.25rem 0 0;
+  padding: 0;
+}
+
+
+
+
+
 
 
 
