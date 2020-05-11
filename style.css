@@ -89,11 +89,26 @@ h2 {
   margin: 0;
 
   font-size: 1.25em;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 0;
   text-transform: initial;
 
   color:#999999;
+}
+h3 {
+  font-size: 1.25em;
+  font-weight: 500;
+  margin: 0 0 4.5rem 0;
+}
+h4 {
+  margin: 0 0 1.875rem 0;
+
+  font-size: 1.25em;
+  font-weight: 200;
+  color: #F84C5F;
+}
+p {
+  letter-spacing: .05em;
 }
 
 .page-title {
@@ -114,7 +129,6 @@ h2 {
   bottom: 49%;
   right: -5%;
   transition: width .3s;
-
 }
 
 /* Nav bar
@@ -360,10 +374,7 @@ the size of the MENU in the menu page, while they have the same class name   */
   bottom: 70%;
   right: 80%;
 }
-.the-fork-page h2 {
-  font-weight: 100;
 
-}
 .project-detail-info p {
   margin: 1.875rem 0 4.6875rem 0;
   font-weight: 300;
@@ -405,12 +416,28 @@ the size of the MENU in the menu page, while they have the same class name   */
 /* Ressume
 ============== */
 .resume-info-wrapper {
-  max-width: 500px;
-  display: grid;
-  grid-template-columns: 2;
+  max-width: 450px;
   position: relative;
   left: 50%;
 }
+.resume-info-wrapper article {
+  margin: 0 0 6.25em -50%;
+  display: grid;
+  grid-template-columns: 1fr 2fr ;
+  grid-auto-rows:minmax(1.25rem,auto);
+}
+
+.resume p {
+  margin: 0;
+}
+.side-title {
+  grid-row:1/4;
+}
+.info {
+  grid-row: 3/4;
+  color: #999999;
+}
+
 
 /* Contact me 
 ============== */
