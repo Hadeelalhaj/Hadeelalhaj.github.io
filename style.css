@@ -81,6 +81,7 @@ header {
 
 h1 {
   margin: 0;
+  
   font-size: 1.953em;
   font-weight: 700;
   text-transform: uppercase;
@@ -96,9 +97,10 @@ h2 {
   color:#999999;
 }
 h3 {
+  margin: 0 0 3.5rem 0;
+
   font-size: 1.25em;
   font-weight: 500;
-  margin: 0 0 4.5rem 0;
 }
 h4 {
   margin: 0 0 1.875rem 0;
@@ -416,12 +418,13 @@ the size of the MENU in the menu page, while they have the same class name   */
 /* Ressume
 ============== */
 .resume-info-wrapper {
+  margin-bottom: 6em;
   max-width: 450px;
   position: relative;
   left: 50%;
 }
 .resume-info-wrapper article {
-  margin: 0 0 6.25em -50%;
+  margin: 0 0 3.5em -50%;
   display: grid;
   grid-template-columns: 1fr 2fr ;
   grid-auto-rows:minmax(1.25rem,auto);
@@ -436,6 +439,10 @@ the size of the MENU in the menu page, while they have the same class name   */
 .info {
   grid-row: 3/4;
   color: #999999;
+}
+.design-skills img{
+  margin-bottom: 2.25em;
+
 }
 
 
