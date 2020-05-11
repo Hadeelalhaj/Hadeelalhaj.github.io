@@ -6,14 +6,14 @@ dark-gray: #999999
 mid-gray: #EEEEEE 
 light-gray:  #F3F3F3*/
 
+/* Fonts 
+------------
+/* font-family: 'Montserrat', sans-serif; */
+
 /* Global
 -------------- */
 * {
   box-sizing: border-box;
-}
-@font-face {
-  src: url(fonts/Gotham-Medium.otf);
-  font-family: 'gotham';
 }
 
 body {
@@ -22,15 +22,19 @@ body {
   
   cursor: none;
   
-  font-family: gotham;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5em;
   background-color:white ;
   color: #15212E;
 }
 body.home-page {
   overflow: hidden;
-  background-color: #15212E;
-  
+  background-color: #15212E; 
 }
+body.projects-page {
+  background-color: #F7F7F7;
+}
+
 .the-fork-page {
   background-color: #EEEEEE;
 }
@@ -177,9 +181,9 @@ img.logo-small {
 }
 
 .logo-title {
-  margin: 2% 0 0 0;
-  font-size: 1.25em;
-  font-weight: 400;
+  margin: .7rem 0 0 0;
+  font-size: 1em;
+  font-weight: 500;
   text-align: center;
   text-transform: uppercase;
   color: white;
@@ -243,8 +247,6 @@ the size of the MENU in the menu page, while they have the same class name   */
 .project-page-title {
   margin: 0 0 0 200px;
   padding: 3.5rem 0;
-  font-size: 3em;
-
   display: inline-block;
   position: relative;
 
@@ -271,8 +273,10 @@ h1 {
 }
 h2 {
   margin: 0;
-  font-size: 1.5em;
-  font-weight: 100;
+
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 0;
   text-transform: initial;
 
   color:#999999;
@@ -285,14 +289,14 @@ h2 {
 
 .project-container p {
 
-  font-size: 1.5em;
-  font-weight: 100;
+  font-size: 1.25em;
+  font-weight: 300;
   text-transform: capitalize;
   
   color: #999999;
 }
 .project-container img {
-  margin-bottom: 3.5rem;
+  margin-bottom: 3.125rem;
   width: 750px;
 }
 
@@ -308,29 +312,36 @@ h2 {
 }
 
 .project-info {
-  max-width: 400px;
-  position: absolute;
-  top: 285px;
-  left: 970px;
+  max-width: 500px;
+  position: relative;
+  top: 20%;
+  left: 50%;
+
+}
+.project-info h1 {
+  font-weight: 500;
 
 }
 
 .second-title {
   margin: 0;
-  width: 100vh;
-  font-size: 5.9em;
-  font-weight: 900;
+  font-size: 3.815rem;
+  font-weight: 500;
   text-transform: uppercase;
   line-height: 5%;
 
-  color: white;
+  color: rgba(255, 255, 255, 0.39);
   
-  position: absolute;
+  position: fixed;
+  top: 37%;
   z-index: -1;
 }
 
 .project-brief {
-  font-size: 1.5rem;
+  margin: 6.25rem 0 10.9375rem 0;
+  font-size: 1.25rem;
+  line-height: 1.5em;
+  font-weight: 500;
   
 }
 .project-brief::after {
@@ -341,14 +352,51 @@ h2 {
   background-color:  #F84C5F;
 
   position: absolute;
-  bottom: 60%;
+  bottom: 70%;
   right: 80%;
 }
+.the-fork-page h2 {
+  font-weight: 300;
+
+}
 .project-detail-info p {
-  font-size: 1.2rem;
-  font-weight: 100;
+  margin: 1.875rem 0 4.6875rem 0;
+  font-weight: 300;
+  max-width: 400px;
 }
 
+
+
+.project-display .img-logo {
+  margin: 0 auto;
+  display: block;
+  width: 800px;
+}
+
+.project-participants {
+  margin-left: 6.25rem;
+  
+}
+.project-participants h3 {
+  margin: 0 0 1.875rem 0;
+  font-size: 1.25em;
+  font-weight: 500; 
+ 
+}
+.project-participants p {
+  margin: 0 0 .7em 0;
+
+  font-weight: 300;
+  line-height: 1em;
+
+  color: #999999;
+}
+
+.project-display img {
+  margin: 0 auto;
+  padding: 1em;
+  width: 90%;
+}
 
 
 
