@@ -26,8 +26,7 @@
         <a href="#">03  MY PROJECTS</a>
         <a href="#">04  CONTACT ME</a>
       </div>
-      
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
    </header>
    
     <!-- logo -->
@@ -58,16 +57,14 @@
     document.addEventListener('mousemove', e => {
       cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
     })
-
-    // menubar
     function openNav() {
       document.getElementById("mySidenav").style.width = "100%";
     }
 
     function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-   
+        document.getElementById("mySidenav").style.width = "0";
+      }
+
   </script>
 
 </body>
