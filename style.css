@@ -315,6 +315,7 @@ div.dark-bar {
 }
 .about-me h1 {
   color: #F84C5F;
+  margin-bottom: 4rem;
 }
 .personal-image {
   width: 400px;
@@ -322,7 +323,6 @@ div.dark-bar {
   position: relative;
   top: -25%;
   left: 13%;
-  
 }
 
 
