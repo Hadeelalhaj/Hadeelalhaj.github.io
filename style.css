@@ -33,6 +33,7 @@ body {
 }
 body.home-page {
   background-color: #15212E; 
+  color: white;
 }
 
 
@@ -297,8 +298,33 @@ div.dark-bar {
 .nav-li-container a {
   text-decoration: none;
   color:  #15212E;
-
 }
+
+/* Home page
+========================================================= */
+.home-page .nav-li-container a {
+  color: white;
+}
+
+.about-me {
+  width: 500px;
+  position: relative;
+  top: 6em;
+  left: 50%;
+  display: block;
+}
+.about-me h1 {
+  color: #F84C5F;
+}
+.personal-image {
+  width: 400px;
+  display: block;
+  position: relative;
+  top: -25%;
+  left: 13%;
+  
+}
+
 
 /* Social networks
 -------------- */
