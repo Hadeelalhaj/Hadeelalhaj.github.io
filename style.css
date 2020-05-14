@@ -14,7 +14,9 @@ light-gray:  #F3F3F3*/
 -------------- */
 * {
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
+
 
 body {
   margin: 0;
@@ -26,6 +28,7 @@ body {
   font-size: 16px;
   font-weight: 200;
   line-height: 1.5em;
+  letter-spacing: .05em;
   background-color:white ;
   color: #15212E;
 
@@ -112,6 +115,7 @@ body.home-page {
 } */ 
 header {
   margin-bottom: 5em;
+  padding: 1em 2em;
   width: 100%;
   /* border: 5px solid red; */
   display: flex;
@@ -122,7 +126,7 @@ header {
 } 
 
 .content-wrapper {
-  padding: 40px;
+  width: 100%;
   height: 100vh;
   position: relative;
 
@@ -281,6 +285,7 @@ div.dark-bar {
 
 .logo {
   width: 55px;
+  display: block;
 }
 
 .nav-li-container {
@@ -305,30 +310,41 @@ div.dark-bar {
 .home-page .nav-li-container a {
   color: white;
 }
-
+.home-page main{
+  margin-top: 13%;
+  padding: 0 10em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
 .about-me {
-  width: 500px;
-  position: relative;
-  top: 6em;
-  left: 50%;
-  display: block;
+  max-width: 31.25em;
+  height: auto;
+  
 }
 .about-me h1 {
-  color: #F84C5F;
   margin-bottom: 4rem;
+  color: #F84C5F;
 }
 .personal-image {
-  width: 400px;
+  width: 25em;
   display: block;
-  position: relative;
-  top: -25%;
-  left: 13%;
+  
+}
+.contact-btn {
+  padding: 2em 0;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
 }
 
 
 /* Social networks
 -------------- */
-.social-container {
+/* .social-container {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -338,39 +354,53 @@ div.dark-bar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */ 
 
 /* Page content
 -------------- */
 /* Projects page 
 =========================================================  */
-
-.crousol-container{
-  margin: 0 auto;
- 
-}
-.project-container  {
+.content-container {
   margin: 0 auto;
 }
-
+.project-container {
+  padding-bottom: 4em;
+}
+.project-container img {
+  margin: 0 auto;
+  width: 37.5em;
+  display: block;
+} 
+.img-text {
+  margin: 0 auto;
+  max-width: 37.5em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(.5em auto);
+}
 .project-container h2 {
+  padding-top: 1em;
   font-weight: 500;
   text-transform: uppercase;
+  line-height: 1.5em;
   color: #15212E;
 }
-
 .project-container p {
-
+  margin: .5em 0;
   font-size: 1.25em;
   font-weight: 300;
   text-transform: capitalize;
   
   color: #999999;
 }
-.project-container img {
-  margin-bottom: 3.125rem;
-  width: 750px;
+.img-text :nth-child(2) {
+  grid-row: 2/3;
 }
+.img-text :nth-child(3) {
+  grid-row: 2/3;
+  text-align: end;
+}
+
 
 /* The fork 
 ========================================================= */
@@ -381,11 +411,11 @@ div.dark-bar {
 }
 
 .project-info {
-  max-width: 550px;
+  max-width: 34.375em;
   position: relative;
   top: -2%;
   left: 50%;
-
+ 
 }
 .project-info h1 {
   font-size: 3em;
@@ -414,27 +444,24 @@ div.dark-bar {
   font-weight: 500;
 }
 .project-info .project-brief::after {
+  margin-top: 4em;
   content: '';
   display: block;
   width: 20%;
-  height: 3px;
+  height: 0.1875rem;
   background-color:  #F84C5F;
-
-  position: absolute;
-  bottom: 70%;
-  right: 80%;
 }
 
 .project-detail-info p {
   margin: 1.875rem 0 4.6875rem 0;
   font-weight: 300;
-  max-width: 450px;
+  max-width: 28.125em;
 }
 
 .project-display .img-logo {
   margin: 0 auto;
   display: block;
-  width: 850px;
+  width: 53.125em;
 }
 
 .project-participants {
@@ -529,7 +556,6 @@ width: 100%;
 }
 .design-skills img{
   margin-bottom: 2.25em;
-
 }
 
 /* Contact me 
