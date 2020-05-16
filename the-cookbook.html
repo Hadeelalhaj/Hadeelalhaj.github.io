@@ -13,9 +13,6 @@
 <body class="the-fork-page">
   <div class="stripe"></div>
   <div class="content-wrapper">
-    
-    <!-- Cursor -->
-    <div class="custom-cursor"></div>
     <header> 
       <a href="index.html"><img class="logo" src="assets/logo-dark.svg" alt="logo"></a>
       <nav>
@@ -25,7 +22,6 @@
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
-      
     </header>
     <main>
       <!-- <p class="side-decoration">App</p> -->
@@ -63,22 +59,9 @@
             <img src="assets/cookbook/icon-5.png" alt="dessert icon"> 
           </div>
           <img class="flipped-book" src="assets/cookbook/fliped-1.png" alt="the fork app screens">
-
-          
-        
-          <!-- <img class="lady-hand-mockup man" src="assets/the-fork/manhand-holding-phone.png" alt="the fork app screens"> -->
         </article>
       </section>
     </main>
   </div>
-
-  <script>
-    const cursor = document.querySelector('.custom-cursor');
-
-    document.addEventListener('mousemove', e => {
-      cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
-    })
-    
-  </script>
 </body>
 </html>

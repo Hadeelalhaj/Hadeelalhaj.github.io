@@ -13,30 +13,8 @@
 
 <body class="home-page" >
   <div class="content-wrapper">
-    <!-- Cursor -->
-    <div class="custom-cursor"></div>
-    <!-- Menu icon -->
+    <!-- Menu bar -->
    <header>
-      <!-- <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">01  HOME</a>
-        <a href="#">02  MY RESUME</a>
-        <a href="#">03  MY PROJECTS</a>
-        <a href="#">04  CONTACT ME</a>
-      </div>
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
-
-      <!-- logo -->
-      <!-- <div class="logo-container">
-        <a href="#home"class="logo"><img src="assets/logo.svg" alt="logo"></a> -->
-        <!-- <h3 class="logo-title">web.<span class="logo-title-color">graphic designer</span></h3> -->
-      <!-- </div>
-      Social networks
-      <ul class="social-container">
-        <li><img src="assets/pinterest.svg" alt="pintrest" width="25"></li>
-        <li><img src="assets/behance-network.svg" alt="behance" width="25"></li>
-        <li><img src="assets/instagram.svg" alt="instagram" width="25"></li>
-      </ul> -->
       <a href="index.html"><img class="logo" src="assets/logo.svg" alt="logo"></a>
       <nav>
         <ul class="nav-li-container">
@@ -46,9 +24,7 @@
         </ul>
       </nav>
     </header>
-
     <!-- About me -->
-
     <main>
       <div class="img-container">
         <img class="personal-image" src="assets/hadeel.png" alt="personal-image">
@@ -63,23 +39,6 @@
      
     </main>
   </div>
-  
-  <script>
-    // cursor
-    const cursor = document.querySelector('.custom-cursor');
-
-    document.addEventListener('mousemove', e => {
-      cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
-    })
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "100%";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-
-  </script>
 
 </body>
 </html>

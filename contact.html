@@ -12,8 +12,6 @@
 
 <body class="contacts-page">
   <div class="content-wrapper">
-    <!-- Cursor -->
-    <div class="custom-cursor"></div>
     <header> 
       <a href="index.html"><img class="logo" src="assets/logo-dark.svg" alt="logo"></a>
       <nav>
@@ -48,14 +46,5 @@
       </section>
     </main>
   </div>
-  <script>
-    const cursor = document.querySelector('.custom-cursor');
-
-    document.addEventListener('mousemove', e => {
-      cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
-    })
-    
-  </script>
-  
 </body>
 </html>

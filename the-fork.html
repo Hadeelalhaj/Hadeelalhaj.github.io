@@ -13,9 +13,6 @@
 <body class="the-fork-page">
   <div class="stripe"></div>
   <div class="content-wrapper">
-    
-    <!-- Cursor -->
-    <div class="custom-cursor"></div>
     <header> 
       <a href="index.html"><img class="logo" src="assets/logo-dark.svg" alt="logo"></a>
       <nav>
@@ -65,7 +62,7 @@
           <p>Franziska</p>
           <p>Hadeel</p>
         </article>
-        <article class="project-mockups">
+        <article class="project-study">
           <div class="icons">
             <img src="assets/the-fork/icon-1.png" alt="the fork icons">
             <img src="assets/the-fork/icon-2.png" alt="the fork icon">
@@ -73,28 +70,68 @@
             <img src="assets/the-fork/icon-4.png" alt="the fork icon">
             <img src="assets/the-fork/icon-5.png" alt="the fork icon"> 
           </div>
-          <img class="lady-hand-mockup lady" src="assets/the-fork/lady-hand-holding-phone-2" alt="the fork app screens">
-          <img class="lady-hand-mockup telted-screen" src="assets/the-fork/SmartPhone-Screens-presentation-Mock-up.png" alt="the fork app screens">
-          <img class="lady-hand-mockup user-core" src="assets/the-fork/The-fork-user-core.png" alt="the fork app screens">
-          <ul>
-            <li>Smooth & easy process</li>
-            <li></li>
-            <li></li>
-          </ul>
+
+          <article class="app-intro">
+            <img class="mockup-telted-screen" src="assets/the-fork/SmartPhone-Screens-presentation-Mock-up.png" alt="the fork app screens">
+            <img class="mockup-lady" src="assets/the-fork/lady-hand-holding-phone-2" alt="the fork app screens">
+          </article>
+
+          <article class="user-core-div">
+            <img class="mockup user-core" src="assets/the-fork/The-fork-user-core.png" alt="the fork app screens">
+            <div list-of-usercore>
+              <ul class="user-core-li left-list">
+                <li>Design solutions for<br>different type of users</li>
+                <li>Target larger<br>number of users</li>
+                <li>The best for both the<br>user & the resturant</li>
+              </ul>
+              <ul class="user-core-li right-list">
+                <li>Smooth<br>& easy process</li>
+                <li>better user<br>experience</li>
+                <li>Modern<br>& beutiful design</li>
+              </ul>
+            </div>
+          </article> 
+          <article class="solutions">
+            <h2>Solutions</h2>
+            <div class="img-discription">
+              <p>Home Screen:</p>
+              <p>better Ux, easy navigation, save time and easy reach.</p>
+              <ul class="home-page-li">
+                <li>Navigation bar</li>
+                <li>Offer near me and Best rated restaurants</li>
+                <li>Cuisines shortcut tabs</li>
+              </ul>
+            </div>
+            <img src="assets/the-fork/The-fork-home-page.png" alt="the fork home page">
+          </article> 
+          <article class="solutions filter-page">
+            <div class="img-discription">
+              <p>Filter screen:</p>
+              <ul class="home-page-li">
+                <li>Open now </li>
+                <li>Only with offer</li>
+                <li>Categories and Filters</li>
+              </ul>
+            </div>
+            <img src="assets/the-fork/The-fork-Filter-page.png" alt="the fork home page">
+          </article>
+          <article class="solutions reservation-page">
+            <div class="img-discription">
+              <p>Filter screen:</p>
+              <ul class="home-page-li">
+                <li>Open now </li>
+                <li>Only with offer</li>
+                <li>Categories and Filters</li>
+              </ul>
+            </div>
+            <img src="assets/the-fork/The-fork-my-reservation-page.png" alt="the fork home page">
+            <img src="assets/the-fork/The-fork-restaurant-page.png" alt="the fork home page">
+          </article>
         
           <!-- <img class="lady-hand-mockup man" src="assets/the-fork/manhand-holding-phone.png" alt="the fork app screens"> -->
-        </article>
+        
       </section>
     </main>
   </div>
-
-  <script>
-    const cursor = document.querySelector('.custom-cursor');
-
-    document.addEventListener('mousemove', e => {
-      cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
-    })
-    
-  </script>
 </body>
 </html>
