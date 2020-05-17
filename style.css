@@ -320,7 +320,7 @@ p {
 }
 
 .main-imgs-container :nth-child(2) {
-  max-width: 45%;
+  max-width: 100%;
 }
 .user-core-mockup {
   margin: 0 auto;
@@ -427,7 +427,7 @@ p {
 .solution-section ul {
   padding-left: 1em;
 }
-/* fixxxxxxxxxxxxxxxxxxxxxx */
+
 .solution-filters img {
   display: inline-block;
 }
@@ -439,15 +439,7 @@ p {
   margin: 20% 0 0 20%;
   
 }
-/* .solution-reservation :first-child {
-  order: 1;
-}
-.solution-reservation .solution-info {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
+
 .solution-reservation {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 2fr ;
@@ -478,13 +470,57 @@ p {
   margin: 2em;
   width: 100%;
 }
-
-
-
 .extra-screens {
   width: 100%;
   display: block;
 }
+/* Magis 
+========================================================= */
+
+.main-imgs-container .users-expectation-articl ul {
+  padding-left: 1em;
+  max-width: 70%;
+}
+.type-of-users {
+  margin: 5em auto;
+  max-width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.type-of-users article {
+  text-align: center;
+
+}
+
+.type-of-users img {
+  width: 7.5em;
+}
+.type-of-users p {
+  margin: 0 auto;
+  max-width: 7.5em;
+  text-align: center;
+
+}
+
+.solution-info div {
+  margin-bottom: 18em;
+  max-width: 50%;
+}
+.customization-img {
+  margin-left: 4em;
+}
+.ar-img {
+  margin-top: -12em;
+}
+
+
+
+
+
+
+
 
 
 
