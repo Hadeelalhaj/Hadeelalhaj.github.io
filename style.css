@@ -318,9 +318,9 @@ p {
 .main-imgs-container img{
   max-width: 55%;
 }
+.main-img-hand {
+  width: 40%;
 
-.main-imgs-container :nth-child(2) {
-  max-width: 100%;
 }
 .user-core-mockup {
   margin: 0 auto;
@@ -479,7 +479,7 @@ p {
 
 .main-imgs-container .users-expectation-articl ul {
   padding-left: 1em;
-  max-width: 70%;
+  max-width: 60%;
 }
 .type-of-users {
   margin: 5em auto;
@@ -516,143 +516,6 @@ p {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .project-study {
-  margin: 4.6875em auto;
-  
-} */
-/* 
-.project-display{
-  margin: 0 auto; 
-}
-.icons {
-  text-align: center;
-}
-
-.icons img {
-  padding: 1%;
-  width:10%;
-}
-.app-intro {
-  margin-top: 4.6875em; 
-}
-
-.mockup-lady {
-  width: 40%;
-  height: auto;
-  position: relative;
- 
-}
-.mockup-telted-screen {
-  width: 50%;
-}
-
-.user-core-div {
-  position: relative;
-  text-align: center;
-}
-.user-core {
-  padding: 0;
-  width: 70%;
-}
-.user-core-li {
-  padding-left: 0;
-  list-style: none;
-  display: inline-block;
-}
-.user-core-li li {
-  padding: 1.1em 0;
-  font-size: .8em;
-  line-height: 1.5em;
-
-}
-.right-list {
-  text-align: left;
-  position: absolute;
-  right: 20%;
-  top: 30%;
-  
-}
-.left-list {
-  text-align: right;
-  position: absolute;
-  left: 18%;
-  top: 30%;
-}
-.solutions {
-  position: relative;
-  margin-bottom: 20em;
-
-}
-.img-discription {
-  margin: 10em 0 0 60% ;
-}
-
-.solutions h2 {
-  font-weight: 500;
-  text-align: center;
-  line-height: 1em;
-  color: #15212E;
-
-}
-.solutions p {
-  text-align: left;
-  max-width: 55%;
-}
-.img-discription p:nth-child(2) {
-  font-weight: 500;
-}
-.home-page-li {
-  padding-left: 20px;
-}
-.solutions li {
-  text-align: left;
-  max-width: 40%;
-}
-
-.solutions img {
-  width: 30%;
-  height: auto;
-  position: absolute;
-  top: 0;
-}
-.filter-page .img-discription {
-  margin: 0 0 0 10% ;
-  position: relative;
-  top: 20em;
-}
-
-.filter-page  img {
-  width: 55%;
-  height: auto;
-  position: absolute;
-  top: -10em;
-  right: 0;
-}
-.reservation-page img{
- 
-} */
-
 /* CookBook 
 ========================================================= */
 .project-mockups {
@@ -660,20 +523,13 @@ p {
 
  position: relative;
 }
-
-
 .mockup-book  img {
 padding: 0;
 width: 60%; 
 }
-img.digital-book-img {
-  text-align: left;
-  width: 60%;
-  display: inline-block;
-  position: relative;
-  bottom: 0;
-  left: 0;
 
+.cookbook-digital-img {
+  max-width: 100%;
 }
 
 /* Ressume
